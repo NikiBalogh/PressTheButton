@@ -1,0 +1,21 @@
+﻿<Window x:Class="PressTheButton.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PressTheButton"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+
+        <Grid x:Name="gridGame">
+            <Button x:Name="btnPressMe" Content="Press Me" HorizontalAlignment="Left" Margin="367,217,0,0" VerticalAlignment="Top" Height="49" Width="80" FontSize="15" Click="btnPressMe_Click"/>
+            <Label x:Name="lblScore" Content="0" HorizontalAlignment="Left" Margin="387,37,0,0" VerticalAlignment="Top" FontSize="35"/>
+
+        </Grid>
+        <Grid x:Name="gridWin" Visibility="Collapsed">
+            <Label Content="You Win" HorizontalAlignment="Center" Margin="0,174,0,0" VerticalAlignment="Top" FontSize="45"/>
+
+        </Grid>
+    </Grid>
+</Window>
